@@ -9,8 +9,6 @@
 
 A system of **9 deep-level AI agent skills** that collectively cover every phase of essay writing and analysis. Each agent is grounded in the book's specific techniques, frameworks, and terminology — not generic advice.
 
----
-
 ## The 9 Agents
 
 ```
