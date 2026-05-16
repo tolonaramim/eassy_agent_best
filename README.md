@@ -1,6 +1,6 @@
 # 📝 Essay Agents — AI Writing Skill Repository
 
-> A library of **9 deep-level AI agent skills** for writing and analyzing essays at an advanced level.  
+> A library of **10 deep-level AI agent skills** for writing and analyzing essays at an advanced level.  
 > Built from **"Effective Writing Skills For Advanced Learners"** by S.M. Zakir Husain (all 15 chapters).  
 > Designed for use with **Google Antigravity** (Claude-based AI coding assistant).
 
@@ -18,7 +18,7 @@ Each skill is a `SKILL.md` file that defines:
 
 ---
 
-## 📦 The 9 Agents
+## 📦 The 10 Agents
 
 ```
                     ┌───────────────────┐
@@ -49,6 +49,7 @@ Each skill is a `SKILL.md` file that defines:
 | `essay-flow` | Coherence and transitions | 5 Transition Types, 10 Marker Categories, Pronoun Audit |
 | `essay-analyzer` | Full diagnostic analysis | 8-Dimension Report, /100 Score, 5 Fatal Flaw Check |
 | `essay-reverse-engineer` | Reverse-engineers pasted writing into hidden essay plan | Purpose Plan recovery, I-SEEK footprint, CUCO forensics, Structure reconstruction |
+| `essay-question-mapper` | Deconstructs any essay question into a map and skeleton | Directive decoding, idea clusters, diagram flow, mnemonic |
 
 ---
 
@@ -73,7 +74,8 @@ skills/
 ├── essay-refiner/SKILL.md
 ├── essay-flow/SKILL.md
 ├── essay-analyzer/SKILL.md
-└── essay-reverse-engineer/SKILL.md
+├── essay-reverse-engineer/SKILL.md
+└── essay-question-mapper/SKILL.md
 ```
 
 ### Example Prompts
@@ -88,6 +90,7 @@ skills/
 | Fix flow | *"My paragraphs don't connect"* |
 | Full review | *"Analyze this essay and score it out of 100"* |
 | Reverse engineer writing | *"I pasted a draft/random text — reverse engineer the full essay structure"* |
+| Map a question quickly | *"Analyze this question and give me a skeleton, diagram, and mnemonic"* |
 | Exam emergency | *"I have 20 minutes to write on 'Democracy'"* |
 
 ---
@@ -193,8 +196,10 @@ essay-agents/
 │   │   └── SKILL.md                 ← Coherence & transitions
 │   ├── essay-analyzer/
 │   │   └── SKILL.md                 ← Full diagnostic analysis
-│   └── essay-reverse-engineer/
-│       └── SKILL.md                 ← Forensic essay reconstruction
+│   ├── essay-reverse-engineer/
+│   │   └── SKILL.md                 ← Forensic essay reconstruction
+│   └── essay-question-mapper/
+│       └── SKILL.md                 ← Question deconstruction + map builder
 └── docs/
     └── WALKTHROUGH.md               ← Full system documentation
 ```
