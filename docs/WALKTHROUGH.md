@@ -7,9 +7,9 @@
 
 ## What Was Built
 
-A system of **9 deep-level AI agent skills** that collectively cover every phase of essay writing and analysis. Each agent is grounded in the book's specific techniques, frameworks, and terminology — not generic advice.
+A system of **10 deep-level AI agent skills** that collectively cover every phase of essay writing and analysis. Each agent is grounded in the book's specific techniques, frameworks, and terminology — not generic advice.
 
-## The 9 Agents
+## The 10 Agents
 
 ```
                     ┌───────────────────┐
@@ -44,6 +44,7 @@ A system of **9 deep-level AI agent skills** that collectively cover every phase
 | `essay-flow` | Ch. 9 | Transition types, coherence, pronoun audit | "Doesn't flow well" |
 | `essay-analyzer` | All 15 | 8-dimension diagnostic, /100 score | "Analyze / grade my essay" |
 | `essay-reverse-engineer` | All 15 | Reconstructs hidden essay strategy from pasted writing | "Reverse engineer this draft/text" |
+| `essay-question-mapper` | All 15 | Deconstructs question into map, skeleton, and mnemonic | "Analyze this question and map it" |
 
 ---
 
@@ -138,6 +139,16 @@ Full 8-Dimension Analysis with /100 scoring:
 
 ---
 
+### 🧭 `essay-question-mapper`
+- **Directive decoding**: detect command verbs (analyze/discuss/evaluate/compare) and expected depth
+- **Keyword-role extraction**: convert question phrases into answer responsibilities
+- **Idea-cluster mapping**: thesis node + 3-branch concept tree
+- **Skeleton generation**: intro/body/conclusion blueprint ready for fast drafting
+- **Memory support**: mnemonic + 30-second recall drill
+- **Diagram output**: visual flow from question → thesis → body blocks → conclusion
+
+---
+
 ## How To Use — Example Prompts
 
 ### Starting Fresh
@@ -175,6 +186,10 @@ Full 8-Dimension Analysis with /100 scoring:
 ### Reverse Engineering
 > *"I pasted random writing — reverse engineer the full essay structure and strategy"*
 → `essay-reverse-engineer` → forensic map + rebuilt blueprint + priority fixes
+
+### Question Mapping
+> *"Analyze this question and give me a fast skeleton + diagram + mnemonic"*
+→ `essay-question-mapper` → prompt map + answer skeleton + recall cues
 
 ### Exam Emergency
 > *"I have 20 minutes to write an essay on 'Discipline' for my exam"*
@@ -253,6 +268,7 @@ Step 7: essay-analyzer
 | essay-flow | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-flow\SKILL.md` |
 | essay-analyzer | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-analyzer\SKILL.md` |
 | essay-reverse-engineer | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-reverse-engineer\SKILL.md` |
+| essay-question-mapper | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-question-mapper\SKILL.md` |
 
 ---
 
