@@ -7,11 +7,11 @@
 
 ## What Was Built
 
-A system of **8 deep-level AI agent skills** that collectively cover every phase of essay writing and analysis. Each agent is grounded in the book's specific techniques, frameworks, and terminology — not generic advice.
+A system of **9 deep-level AI agent skills** that collectively cover every phase of essay writing and analysis. Each agent is grounded in the book's specific techniques, frameworks, and terminology — not generic advice.
 
 ---
 
-## The 8 Agents
+## The 9 Agents
 
 ```
                     ┌───────────────────┐
@@ -45,6 +45,7 @@ A system of **8 deep-level AI agent skills** that collectively cover every phase
 | `essay-refiner` | Ch. 7–8 | Conciseness, clarity, directness | "Too wordy / unclear" |
 | `essay-flow` | Ch. 9 | Transition types, coherence, pronoun audit | "Doesn't flow well" |
 | `essay-analyzer` | All 15 | 8-dimension diagnostic, /100 score | "Analyze / grade my essay" |
+| `essay-reverse-engineer` | All 15 | Reconstructs hidden essay strategy from pasted writing | "Reverse engineer this draft/text" |
 
 ---
 
@@ -129,6 +130,16 @@ Full 8-Dimension Analysis with /100 scoring:
 
 ---
 
+### 🧩 `essay-reverse-engineer`
+- **Forensic intake modes**: full essay / partial draft / random pasted writing
+- **Purpose-plan reconstruction**: infer Output, Reader, Tone, Style, Strategy
+- **Idea-footprint recovery**: I-SEEK + Idea Booster + source-type detection (Q/P/F/T/HE)
+- **Structure recovery**: beginning approach, body arrangement, ending type, harmony check
+- **Paragraph forensics**: CUCO diagnostics + development method inference
+- **Blueprint reconstruction**: convert messy writing into a reusable outline and action plan
+
+---
+
 ## How To Use — Example Prompts
 
 ### Starting Fresh
@@ -162,6 +173,10 @@ Full 8-Dimension Analysis with /100 scoring:
 ### Full Review
 > *"Analyze this essay and tell me everything that's wrong"*
 → `essay-analyzer` → 8-dimension report + /100 score + action plan
+
+### Reverse Engineering
+> *"I pasted random writing — reverse engineer the full essay structure and strategy"*
+→ `essay-reverse-engineer` → forensic map + rebuilt blueprint + priority fixes
 
 ### Exam Emergency
 > *"I have 20 minutes to write an essay on 'Discipline' for my exam"*
@@ -239,6 +254,7 @@ Step 7: essay-analyzer
 | essay-refiner | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-refiner\SKILL.md` |
 | essay-flow | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-flow\SKILL.md` |
 | essay-analyzer | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-analyzer\SKILL.md` |
+| essay-reverse-engineer | `C:\Users\t0n0y\.gemini\antigravity\skills\essay-reverse-engineer\SKILL.md` |
 
 ---
 
